@@ -1,0 +1,8 @@
+package br.com.codenation.aceleradev.rec.loja.exceptions;
+
+public class InvalidUserException  extends Exception {
+
+    public InvalidUserException(String message) {
+        super(message);
+    }
+}
