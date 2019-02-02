@@ -1,33 +1,27 @@
 package br.com.codenation.aceleradev.rec.loja.service;
 
+import br.com.codenation.aceleradev.rec.loja.dao.UserDAO;
 import br.com.codenation.aceleradev.rec.loja.exceptions.InvalidUserException;
+import br.com.codenation.aceleradev.rec.loja.model.User;
 
 public class UserController {
 
 
-    String dao;
+    public User getUser(String CPF) throws InvalidUserException {
 
-    public String getUser(String CPF) throws InvalidUserException {
+        UserDAO user = new UserDAO();
 
-        if(CPF == null){
-            throw new InvalidUserException("Usuario Invalido");
 
+        User usuarioLogado = user.findUser(CPF);
+
+        if (usuarioLogado == null){
+            throw new InvalidUserException("Usuario invalido, digite novamente!");
         }
 
-        return CPF;
+
+        return usuarioLogado;
     }
 
 
-    public void getProducts() {
-
-    }
-
-    public void getShows() {
-
-    }
-
-    public void getSoftwares() {
-
-    }
 
 }
