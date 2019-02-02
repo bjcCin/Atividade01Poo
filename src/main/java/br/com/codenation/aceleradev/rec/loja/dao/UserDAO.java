@@ -32,18 +32,13 @@ public class UserDAO {
 				user.setId(resultSet.getInt("id"));
 				user.setName(resultSet.getString("nome"));
 			}
-						
+
 		} catch (SQLException e) {
 			System.out.println("Falha no banco de dados. Contate administrador.");
 		} finally {
 			ConnectionJDBC.closeConnection(connection, statement, resultSet);
 		}
 		return user;
-		
-
-		
-
-		
 
 	}
 }

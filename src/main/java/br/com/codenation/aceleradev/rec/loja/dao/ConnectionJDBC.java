@@ -31,7 +31,7 @@ public class ConnectionJDBC {
 			try {
 				resultSet.close();
 			} catch (SQLException e) {
-				throw new CloseBDFailException("Falha para fechar conexão Resul");
+				throw new CloseBDFailException("Falha para fechar conexão Result. Contate o administrador.");
 			}
 		}
 
@@ -39,7 +39,7 @@ public class ConnectionJDBC {
 			try {
 				connection.close();
 			} catch (SQLException e) {
-				throw new CloseBDFailException("Falha para fechar conexão connection");
+				throw new CloseBDFailException("Falha para fechar conexão connection. Contate o administrador.");
 			}
 		}
 
@@ -47,7 +47,7 @@ public class ConnectionJDBC {
 			try {
 				statement.close();
 			} catch (SQLException e) {
-				throw new CloseBDFailException("Falha para fechar conexão statement");
+				throw new CloseBDFailException("Falha para fechar conexão statement. Contate o administrador.");
 			}
 		}
 

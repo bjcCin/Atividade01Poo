@@ -8,6 +8,7 @@ public abstract class Product {
     private double price;
     private int stockCount;
     private int category;
+    private String description;
 
     public Product(int id, double price, int stockCount, int category, String nameArtist, int musicCount, String nameDirector, String initYear, String version, String requisits) {
         this.id = id;
@@ -50,6 +51,14 @@ public abstract class Product {
     public void setCategory(int category) {
         this.category = category;
     }
+    
+    public String getDescription() {
+		return description;
+	}
+    
+    public void setDescription(String description) {
+		this.description = description;
+	}
 
 
 }

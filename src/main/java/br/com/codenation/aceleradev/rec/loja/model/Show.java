@@ -14,4 +14,22 @@ public class Show extends  Product{
     public Show() {
     }
 
+	public String getArtistName() {
+		return artistName;
+	}
+
+	public void setArtistName(String artistName) {
+		this.artistName = artistName;
+	}
+
+	public int getCountMusics() {
+		return countMusics;
+	}
+
+	public void setCountMusics(int countMusics) {
+		this.countMusics = countMusics;
+	}
+    
+    
+
 }
