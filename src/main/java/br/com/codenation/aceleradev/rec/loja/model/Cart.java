@@ -63,4 +63,15 @@ public class Cart {
     public void setHourDate(Date hourDate) {
         this.hourDate = hourDate;
     }
+
+    @Override
+    public String toString() {
+        return "Cart{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", totalPrice=" + totalPrice +
+                ", count=" + count +
+                ", hourDate=" + hourDate +
+                '}';
+    }
 }

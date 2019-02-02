@@ -29,4 +29,12 @@ public class Movie extends  Product {
     public void setInitYear(String initYear) {
         this.initYear = initYear;
     }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "directorName='" + directorName + '\'' +
+                ", initYear='" + initYear + '\'' +
+                '}';
+    }
 }

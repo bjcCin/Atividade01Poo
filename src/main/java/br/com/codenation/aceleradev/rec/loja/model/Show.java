@@ -29,7 +29,12 @@ public class Show extends  Product{
 	public void setCountMusics(int countMusics) {
 		this.countMusics = countMusics;
 	}
-    
-    
 
+	@Override
+	public String toString() {
+		return "Show{" +
+				"artistName='" + artistName + '\'' +
+				", countMusics=" + countMusics +
+				'}';
+	}
 }

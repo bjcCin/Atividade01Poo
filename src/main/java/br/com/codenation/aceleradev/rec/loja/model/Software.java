@@ -31,4 +31,12 @@ public class Software extends Product {
 	public void setSystemRequisits(String systemRequisits) {
 		this.systemRequisits = systemRequisits;
 	}
+
+	@Override
+	public String toString() {
+		return "Software{" +
+				"version='" + version + '\'' +
+				", systemRequisits='" + systemRequisits + '\'' +
+				'}';
+	}
 }
