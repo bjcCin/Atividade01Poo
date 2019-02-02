@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Product {
 
-    private Long id;
+    private int id;
     private double price;
     private int stockCount;
     private int category;
@@ -15,7 +15,7 @@ public class Product {
     private String version;
     private String requisits;
 
-    public Product(Long id, double price, int stockCount, int category, String nameArtist, int musicCount, String nameDirector, String initYear, String version, String requisits) {
+    public Product(int id, double price, int stockCount, int category, String nameArtist, int musicCount, String nameDirector, String initYear, String version, String requisits) {
         this.id = id;
         this.price = price;
         this.stockCount = stockCount;
@@ -31,11 +31,11 @@ public class Product {
     public Product() {
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

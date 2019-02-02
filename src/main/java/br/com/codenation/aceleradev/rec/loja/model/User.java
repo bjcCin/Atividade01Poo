@@ -2,11 +2,11 @@ package br.com.codenation.aceleradev.rec.loja.model;
 
 public class User {
 
-    private Long id;
+    private int id;
     private String name;
     private String CPF;
 
-    public User(Long id,String name, String CPF) {
+    public User(int id,String name, String CPF) {
         this.id = id;
         this.name = name;
         this.CPF = CPF;
@@ -31,11 +31,11 @@ public class User {
         this.CPF = CPF;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 }
