@@ -12,9 +12,12 @@ public class StoreMiniTests {
 		user = new UserDAO().findUser("23521765733");
 		System.out.println(user.getName());
 		
-		List<Product> product = new ProductDAO().listProductsPerCategory(0);
+		List<Product> product = new ProductDAO().listProductsByCategory(0);
 		
-		System.out.println(product.size());
+		System.out.println(product.size()+" "+product.get(0).getId());
+		
+		Product product2 = new ProductDAO().findProduct(11);
+		System.out.println(product2.getId());
 				
 
 	}
