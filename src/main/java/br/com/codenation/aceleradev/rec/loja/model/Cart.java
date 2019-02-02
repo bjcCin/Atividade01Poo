@@ -4,27 +4,29 @@ import java.sql.Date;
 
 public class Cart {
 
-    private Long id;
+    private int id;
     private Long userId;
     private double totalPrice;
     private int count;
     private Date hourDate;
 
-    public Long getId() {
-        return id;
-    }
+    
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Cart(Long id, Long userId, double totalPrice, int count, Date hourDate) {
+    public Cart(int id, Long userId, double totalPrice, int count, Date hourDate) {
         this.id = id;
         this.userId = userId;
         this.totalPrice = totalPrice;
         this.count = count;
         this.hourDate = hourDate;
     }
+    
+    public int getId() {
+		return id;
+	}
+    
+    public void setId(int id) {
+		this.id = id;
+	}
 
     public Cart() {
     }

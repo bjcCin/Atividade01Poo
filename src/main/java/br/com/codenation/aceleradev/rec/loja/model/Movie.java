@@ -5,7 +5,7 @@ public class Movie extends  Product {
     private String directorName;
     private String initYear;
 
-    public Movie(Long id, double price, int stockCount, int category, String nameArtist, int musicCount, String nameDirector, String initYear, String version, String requisits, String directorName, String initYear1) {
+    public Movie(int id, double price, int stockCount, int category, String nameArtist, int musicCount, String nameDirector, String initYear, String version, String requisits, String directorName, String initYear1) {
         super(id, price, stockCount, category, nameArtist, musicCount, nameDirector, initYear, version, requisits);
         this.directorName = directorName;
         this.initYear = initYear1;

@@ -5,7 +5,7 @@ public class Software extends  Product{
     public String version;
     public  String systemRequisits;
 
-    public Software(Long id, double price, int stockCount, int category, String nameArtist, int musicCount, String nameDirector, String initYear, String version, String requisits, String version1, String systemRequisits) {
+    public Software(int id, double price, int stockCount, int category, String nameArtist, int musicCount, String nameDirector, String initYear, String version, String requisits, String version1, String systemRequisits) {
         super(id, price, stockCount, category, nameArtist, musicCount, nameDirector, initYear, version, requisits);
         this.version = version1;
         this.systemRequisits = systemRequisits;
